@@ -17,7 +17,7 @@ import scraperwiki
 from lxml import html, etree
 from datetime import datetime
 import requests
-import cx_Oracle 
+#import cx_Oracle 
 
 sub_url = 'https://lodgement.planning-permits.delwp.vic.gov.au'
 url = 'https://lodgement.planning-permits.delwp.vic.gov.au/search-register'
