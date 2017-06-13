@@ -125,11 +125,8 @@ while page_scrape <= max_pages:
 			sql_part_3 = ") Values ('"
 			sql_part_4 = "','".join(column_values)
 			sql_part_5 = "')"
-			sql 
-
-			scraperwiki.sql.save(str)
-
 			sql = ''.join([sql_part_1,sql_part_2,sql_part_3,sql_part_4,sql_part_5])
+			
 			scraperwiki.sql.execute(sql)
 
 
