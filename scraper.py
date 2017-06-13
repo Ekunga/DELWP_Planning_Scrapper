@@ -9,6 +9,10 @@
 #
 #############
 
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+
 import scraperwiki
 from lxml import html, etree
 from datetime import datetime
@@ -103,9 +107,9 @@ while page_scrape <= max_pages:
 				else: 
 					fixed_value = value.strip()
 				fixed_value = fixed_value.replace("'","''")
-				fixed_value = fixed_value.replace("’","''") 
+				
 				fixed_value = fixed_value.replace("&","\&")
-				fixed_value = fixed_value.replace("é","e")
+				
 
 				column_values.append(fixed_value)
 
