@@ -94,12 +94,12 @@ while page_scrape <= max_pages:
 				#print(sql)
 				#scraperwiki.sql.execute(sql)
 
-				for row in cur:
-					print('All Complete')
-					exit = 'true' 
-					item_to_scrape = len(item_ref)
-					item_to_display = len(item[0][1]) + 1
-					page_scrape = max_pages + 1
+				#for row in cur:
+					#print('All Complete')
+					#exit = 'true' 
+					#item_to_scrape = len(item_ref)
+					#item_to_display = len(item[0][1]) + 1
+					#page_scrape = max_pages + 1
 
 			if exit == 'false':
 				if item[item_to_scrape][0] == 'Application_Link': 
