@@ -7,7 +7,7 @@
 #    https://lodgement.planning-permits.delwp.vic.gov.au/
 #
 #
-##############
+#############
 
 import scraperwiki
 from lxml import html, etree
@@ -98,11 +98,6 @@ while page_scrape <= max_pages:
 					page_scrape = max_pages + 1
 
 			if exit == 'false':
-
-
-
-
-			if exit == 'false':
 				if item[item_to_scrape][0] == 'Application_Link': 
 					fixed_value = ''.join([sub_url,value.strip()])
 				else: 
@@ -118,6 +113,7 @@ while page_scrape <= max_pages:
 
 
 # Inserts Data
+
 		if  exit =='false':
 			column_name = 0
 			sql_part_1 = "Insert into data ("
@@ -132,7 +128,8 @@ while page_scrape <= max_pages:
 			sql = ''.join([sql_part_1,sql_part_2,sql_part_3,sql_part_4,sql_part_5])
 			scraperwiki.sql.execute(sql)
 
+
 		item_to_scrape = 0
 		item_to_display = item_to_display + 1
 	page_scrape = page_scrape + 1
-  
+
