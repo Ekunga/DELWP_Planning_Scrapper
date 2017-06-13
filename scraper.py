@@ -90,9 +90,9 @@ while page_scrape <= max_pages:
 
 # Checks if Application currently exists
 			if (item[item_to_scrape][0] == 'Application'):
-				sql = "Select Distinct Application from data where Application ='"+str(value)+"'"
+				#sql = "Select Distinct Application from data where Application ='"+str(value)+"'"
 				#print(sql)
-				scraperwiki.sql.execute(sql)
+				#scraperwiki.sql.execute(sql)
 
 				for row in cur:
 					print('All Complete')
@@ -127,7 +127,7 @@ while page_scrape <= max_pages:
 			sql_part_5 = "')"
 			sql 
 
-			scraperwiki.sql.execute(str)
+			scraperwiki.sql.save(str)
 
 			sql = ''.join([sql_part_1,sql_part_2,sql_part_3,sql_part_4,sql_part_5])
 			scraperwiki.sql.execute(sql)
