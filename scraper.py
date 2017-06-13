@@ -89,7 +89,7 @@ while page_scrape <= max_pages:
 
 
 # Checks if Application currently exists
-			if (item[item_to_scrape][0] == 'Application'):
+			#if (item[item_to_scrape][0] == 'Application'):
 				#sql = "Select Distinct Application from data where Application ='"+str(value)+"'"
 				#print(sql)
 				#scraperwiki.sql.execute(sql)
